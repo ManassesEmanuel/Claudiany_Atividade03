@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #0b0b0b;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.title {
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    color: #aaaaaa;
+    letter-spacing: 2px;
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+/* LINHAS */
+.line {
+    width: 70%;
+    border: none;
+    border-top: 1px solid #333333;
+    margin-bottom: 35px;
+}
+
+.image {
+    width: 750px;
+    max-width: 90%;
+    border-radius: 15px;
+    display: block;
+    margin-bottom: 35px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+/* DESCRIÇÃO TAG P*/
+.description {
+    max-width: 1100px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #cccccc;
+    text-align: justify;
+    margin-bottom: 35px;
+}
+
+/* SÓ NEGRITO DA TAG P*/
+.description strong {
+    color: #ffffff;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+/* AQUI TBM TEM UMA PARTE DOS EFEITOS DOS BUTÃO (TRANSITION) */
+.button {
+    display: inline-block;
+    padding: 14px 30px;
+    border: 1px solid #555555;
+    border-radius: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+/* EFEITO DOS BUTÃO */
+.button:hover {
+    background: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* COISA PRA CELULAR NÂO NECESSARIO, MAS PEDI AJUDA AO CHAT GPT E FIZ POR CURIOSIDADE E DEIXEI AQ SÓ PRA SALVAR,
+ PEÇO QUE NÃO USE CONTRA MIM TO APRENDENDO AINDA E EXISTE UM MUNDO ONDE EU NÃO LEMBRO OQUE CADA LINHA ABAIXO FAZ. */
+@media (max-width: 600px) {
+
+    body {
+        padding: 40px 15px;
+    }
+
+    .title {
+        font-size: 38px;
+        letter-spacing: 3px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+    }
+
+    .description {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .button {
+        text-align: center;
+    }
+}
